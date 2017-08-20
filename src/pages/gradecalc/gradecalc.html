@@ -1,0 +1,49 @@
+<!--
+  Generated template for the GradecalcPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Grade Calculator</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col width-100>
+          <ion-list>
+            <ion-item>
+              <ion-label floating>CP Grade</ion-label>
+              <ion-input [(ngModel)]="et_cp" name="et_cp" type="number"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label floating>Exam Grade</ion-label>
+              <ion-input [(ngModel)]="et_exam" name="et_exam" type="number"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <button ion-button large block type="submit" (click)="calculateGrade()">Calculate Grade</button>
+            </ion-item>
+           
+                <ion-label class="label_vals">Your Grade is: {{et_totalGrade}}</ion-label>
+
+          </ion-list>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+
+
+
+
+
+</ion-content>

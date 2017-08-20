@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col width-100>
+        <ion-list>
+
+          <form (ngSubmit)="saveForm()">
+
+            <ion-item>
+              <ion-label floating>Search for Buildings or Department</ion-label>
+              <ion-input [(ngModel)]="et_searchHome" name="et_searchHome" type="text"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <button ion-button large type="submit" block>Search</button>
+            </ion-item>
+
+          </form>
+
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <img class="home_image" src="assets/img/campus_map_v3.webp">
+
+</ion-content>
