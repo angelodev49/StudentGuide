@@ -19,6 +19,13 @@ export class GradecalcPage {
   et_exam: any;
   et_totalGrade: number = 0;
 
+  et_gwa_units: any;
+  et_gwa_grade: any;
+
+  numxunits: any = 0;
+  numxgrade: any = 0;
+  clickcounter: any = 0;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
@@ -34,6 +41,23 @@ export class GradecalcPage {
     var total = ((et_cp * 2) + et_exam) / 3;
     var rounded = Math.round(total * 100) / 100;
     this.et_totalGrade = rounded
+
+  }
+
+  // Fix the computation of GWA
+  calculateGwa() {
+    let clickcounter;
+    clickcounter += 1;
+
+    let et_gwa_grade = this.et_gwa_grade ? parseFloat(this.et_gwa_grade) : 0;
+    let et_gwa_units = this.et_gwa_units ? parseFloat(this.et_gwa_units) : 0;
+    let numxunits = 0;
+    let numxgrade = 0;
+    var xunits = et_gwa_units + numxunits;
+
+    var multixGrade = et_gwa_grade * et_gwa_units;
+    var xGrades = multixGrade + numxgrade;
+    var gwaResult = Math.round(xGrades * 100) / 100;
 
   }
 

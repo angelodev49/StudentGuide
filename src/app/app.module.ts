@@ -17,6 +17,21 @@ import { MemoPage } from './../pages/memo/memo';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+//FAQ
+import { FaqboardofdirectorsPage } from './../pages/faqboardofdirectors/faqboardofdirectors';
+import { FaqothertransactionsPage } from './../pages/faqothertransactions/faqothertransactions';
+import { FaqenrollmentprocPage } from './../pages/faqenrollmentproc/faqenrollmentproc';
+import { FaqdisciplinarymeasuresPage } from './../pages/faqdisciplinarymeasures/faqdisciplinarymeasures';
+import { FaqceumusicPage } from './../pages/faqceumusic/faqceumusic';
+import { FaqceuhistoryPage } from './../pages/faqceuhistory/faqceuhistory';
+
+//FAQ DisciplinaryMeasures
+import { FaqdmslightoffensePage } from './../pages/faqdmslightoffense/faqdmslightoffense';
+import { FaqdmseriousPage } from './../pages/faqdmserious/faqdmserious';
+import { FaqdmotheroffensePage } from './../pages/faqdmotheroffense/faqdmotheroffense';
+import { FaqdmlessseriousPage } from './../pages/faqdmlessserious/faqdmlessserious';
+
+
 @NgModule({
   declarations: [
     MyApp,
@@ -27,7 +42,17 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     GradecalcPage,
     FaqPage,
     CollegesPage,
-    MemoPage
+    MemoPage,
+    FaqboardofdirectorsPage,
+    FaqothertransactionsPage,
+    FaqenrollmentprocPage,
+    FaqdisciplinarymeasuresPage,
+    FaqceumusicPage,
+    FaqceuhistoryPage,
+    FaqdmslightoffensePage,
+    FaqdmseriousPage,
+    FaqdmotheroffensePage,
+    FaqdmlessseriousPage
   ],
   imports: [
     BrowserModule,
@@ -44,7 +69,17 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     GradecalcPage,
     FaqPage,
     CollegesPage,
-    MemoPage
+    MemoPage,
+    FaqboardofdirectorsPage,
+    FaqothertransactionsPage,
+    FaqenrollmentprocPage,
+    FaqdisciplinarymeasuresPage,
+    FaqceumusicPage,
+    FaqceuhistoryPage,
+    FaqdmslightoffensePage,
+    FaqdmseriousPage,
+    FaqdmotheroffensePage,
+    FaqdmlessseriousPage
   ],
   providers: [
     StatusBar,

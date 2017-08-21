@@ -16,32 +16,96 @@
 
 <ion-content padding>
 
-    <ion-grid>
-      <ion-row>
-        <ion-col width-100>
-          <ion-list>
-            <ion-item>
-              <ion-label floating>CP Grade</ion-label>
-              <ion-input [(ngModel)]="et_cp" name="et_cp" type="number"></ion-input>
-            </ion-item>
+  <ion-grid>
+    <ion-row>
+      <ion-col width-100>
+        <ion-list>
+          <ion-item>
+            <ion-label floating>CP Grade</ion-label>
+            <ion-input [(ngModel)]="et_cp" name="et_cp" type="number"></ion-input>
+          </ion-item>
 
-            <ion-item>
-              <ion-label floating>Exam Grade</ion-label>
-              <ion-input [(ngModel)]="et_exam" name="et_exam" type="number"></ion-input>
-            </ion-item>
+          <ion-item>
+            <ion-label floating>Exam Grade</ion-label>
+            <ion-input [(ngModel)]="et_exam" name="et_exam" type="number"></ion-input>
+          </ion-item>
 
-            <ion-item>
-              <button ion-button large block type="submit" (click)="calculateGrade()">Calculate Grade</button>
-            </ion-item>
-           
-                <ion-label class="label_vals">Your Grade is: {{et_totalGrade}}</ion-label>
+          <ion-item>
+            <button ion-button large block type="submit" (click)="calculateGrade()">Calculate Grade</button>
+          </ion-item>
 
-          </ion-list>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
+          <ion-label class="label_vals">Your Grade is: {{et_totalGrade}}</ion-label>
+
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col width-100>
+        <ion-list>
+
+          <ion-item>
+            <ion-label floating>Total Subjects</ion-label>
+            <ion-input [(ngModel)]="et_gwa_totalsubj" name="et_gwa_totalsubj" type="number"></ion-input>
+          </ion-item>
 
 
+          <ion-grid>
+            <ion-row>
+
+              <ion-col width-50>
+                <ion-label>Units</ion-label>
+                <ion-select [(ngModel)]="et_gwa_units">
+                  <ion-option value="1.0">1.0</ion-option>
+                  <ion-option value="2.0">2.0</ion-option>
+                  <ion-option value="3.0">3.0</ion-option>
+                  <ion-option value="4.0">4.0</ion-option>
+                  <ion-option value="5.0">5.0</ion-option>
+                </ion-select>
+              </ion-col>
+
+              <ion-col width-50>
+                <ion-item>
+                  <ion-label floating>Grade</ion-label>
+                  <ion-input [(ngModel)]="et_gwa_grade" name="et_gwa_grade" type="number"></ion-input>
+                </ion-item>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+
+        </ion-list>
+        <button ion-button large block type="submit" (click)="calculateGwa()">Calculate GWA</button>
+
+        <ion-grid class="grade_calc_grids">
+          <ion-row>
+            <ion-col width-50>
+              <ion-label class="label_gwa">Calculated Units: {{et_gwa_calc_units}}</ion-label>
+            </ion-col>
+            <ion-col width-50>
+              <ion-label class="label_gwa">Calculated Grade: {{et_gwa_calc_grade}}</ion-label>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+        <ion-grid class="grade_calc_grids">
+          <ion-row>
+            <ion-col width-50>
+              <ion-label class="label_gwa">GWA: {{et_gwa}}</ion-label>
+            </ion-col>
+            <ion-col width-50>
+              <ion-label class="label_gwa">Total Inputed Grade: {{et_gwa_inpGrade}}</ion-label>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+
+
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
 
 

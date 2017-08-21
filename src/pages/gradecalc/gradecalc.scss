@@ -1,5 +1,13 @@
 page-gradecalc {
   .label_vals {
-    font-size: 25px
+    font-size: 25px;
+  }
+  .label_gwa {
+    font-size: 15px;
+    background-color: color($colors, primary);
+    color: color($colors, light);
+  }
+  .grade_calc_grids {
+    background-color: color($colors, primary);
   }
 }

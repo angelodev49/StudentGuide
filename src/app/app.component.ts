@@ -1,4 +1,3 @@
-import { FaqPage } from './../pages/faq/faq';
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -11,6 +10,7 @@ import { GradecalcPage } from './../pages/gradecalc/gradecalc';
 import { AboutPage } from './../pages/about/about';
 import { CollegesPage } from './../pages/colleges/colleges';
 import { MemoPage } from './../pages/memo/memo';
+import { FaqPage } from './../pages/faq/faq';
 
 @Component({
   templateUrl: 'app.html'
