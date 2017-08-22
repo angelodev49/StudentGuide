@@ -5,7 +5,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { VicinitymapPage } from './../pages/vicinitymap/vicinitymap';
 import { UnivcalendarPage } from './../pages/univcalendar/univcalendar';
-import { OnlineportalPage } from './../pages/onlineportal/onlineportal';
 import { GradecalcPage } from './../pages/gradecalc/gradecalc';
 import { AboutPage } from './../pages/about/about';
 import { CollegesPage } from './../pages/colleges/colleges';
@@ -27,14 +26,13 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Vicinity Map', component: VicinitymapPage, icon: 'md-map' },
-      { title: 'University Calendar', component: UnivcalendarPage, icon: 'md-calendar' },
-      { title: 'CEU Online Portal', component: OnlineportalPage, icon: 'md-git-network' },
-      { title: 'Schools/Colleges', component: CollegesPage, icon: 'md-school' },
-      { title: 'Memo', component: MemoPage, icon: 'md-document' },
-      { title: 'Grade Calculator', component: GradecalcPage, icon: 'md-calculator' },
-      { title: 'FAQ', component: FaqPage, icon: 'md-information-circle' },
-      { title: 'About', component: AboutPage, icon: 'md-people' }
+      { title: 'Vicinity Map', component: VicinitymapPage, icon: 'map' },
+      { title: 'University Calendar', component: UnivcalendarPage, icon: 'calendar' },
+      { title: 'Schools/Colleges', component: CollegesPage, icon: 'school' },
+      { title: 'Memo', component: MemoPage, icon: 'document' },
+      { title: 'Grade Calculator', component: GradecalcPage, icon: 'calculator' },
+      { title: 'FAQ', component: FaqPage, icon: 'information-circle' },
+      { title: 'About', component: AboutPage, icon: 'people' }
 
     ];
 

@@ -16,4 +16,25 @@
 
 <ion-content padding>
 
+  <ion-list>
+    <ion-item *ngFor="let aboutDev of developers">
+      <ion-card>
+        <img src="{{aboutDev.image}}" class="myImages" />
+        <ion-card-content>
+          <ion-card-title class="name">
+            {{aboutDev.name}}
+          </ion-card-title>
+          <p class="def">
+            <br/><strong>FB/Instagram: </strong>{{aboutDev.fb}}
+            <br/><strong>Twitter: </strong>{{aboutDev.twitter}}
+            <br/><strong>Course: </strong>{{aboutDev.course}}
+            <br/><strong>Contact #: </strong>{{aboutDev.contactno}}
+          </p>
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+
+
+
 </ion-content>

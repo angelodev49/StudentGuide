@@ -9,7 +9,7 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Grade Calculator</ion-title>
+    <ion-title>Memo</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -18,21 +18,23 @@
 
   <ion-item>
     <ion-label floating>Input your Memo Here</ion-label>
-    <ion-input type="text" [(ngModel)]="et_memo" name="et_memo"></ion-input>
+    <ion-textarea type="text" [(ngModel)]="et_memo" name="et_memo" cols="30" rows="5"></ion-textarea>
   </ion-item>
+  <br/>
+  <button ion-button large block type="submit" (click)="submitMemo()">Submit Memo</button>
 
   <ion-grid>
     <ion-row>
       <ion-col width-100>
         <ion-list>
           <ion-item *ngFor="let mL of memoList ">
-            {{mL.memo}}
+            <ion-textarea class="outputData" type="text" [(ngModel)]="mL.memo" cols="30" rows="5" readonly></ion-textarea>
           </ion-item>
         </ion-list>
       </ion-col>
     </ion-row>
   </ion-grid>
 
-  <button ion-button large block type="submit" (click)="submitMemo()">Submit Memo</button>
+
 
 </ion-content>
