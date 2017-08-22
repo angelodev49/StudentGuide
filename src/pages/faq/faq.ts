@@ -5,7 +5,6 @@ import { FaqothertransactionsPage } from './../faqothertransactions/faqothertran
 import { FaqenrollmentprocPage } from './../faqenrollmentproc/faqenrollmentproc';
 import { FaqdisciplinarymeasuresPage } from './../faqdisciplinarymeasures/faqdisciplinarymeasures';
 import { FaqceumusicPage } from './../faqceumusic/faqceumusic';
-import { FaqceuhistoryPage } from './../faqceuhistory/faqceuhistory';
 import { FaqboardofdirectorsPage } from './../faqboardofdirectors/faqboardofdirectors';
 
 /**
@@ -29,15 +28,22 @@ export class FaqPage {
     console.log('ionViewDidLoad FaqPage');
   }
 
-  goCeuBoardMembers() {
-    this.navCtrl.push(FaqboardofdirectorsPage);
+  //Loads data to faqboardofdirectors component
+  goLoadBoardofDirectors() {
+    this.navCtrl.push(FaqboardofdirectorsPage, {
+      myhtml: "assets/htmlcollections/board_of_directors.html"
+    });
   }
+  goLoadHistory() {
+    this.navCtrl.push(FaqboardofdirectorsPage, {
+      myhtml: "assets/htmlcollections/history_hamili.html"
+    });
+  }
+
   goOtherTransaction() {
     this.navCtrl.push(FaqothertransactionsPage);
   }
-  goCeuHistory() {
-    this.navCtrl.push(FaqceuhistoryPage);
-  }
+
   goDisciplinaryMeasures() {
     this.navCtrl.push(FaqdisciplinarymeasuresPage);
   }

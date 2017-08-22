@@ -13,7 +13,6 @@ import { GradecalcPage } from './../pages/gradecalc/gradecalc';
 import { FaqPage } from './../pages/faq/faq';
 import { CollegesPage } from './../pages/colleges/colleges';
 import { MemoPage } from './../pages/memo/memo';
-
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -23,14 +22,13 @@ import { FaqothertransactionsPage } from './../pages/faqothertransactions/faqoth
 import { FaqenrollmentprocPage } from './../pages/faqenrollmentproc/faqenrollmentproc';
 import { FaqdisciplinarymeasuresPage } from './../pages/faqdisciplinarymeasures/faqdisciplinarymeasures';
 import { FaqceumusicPage } from './../pages/faqceumusic/faqceumusic';
-import { FaqceuhistoryPage } from './../pages/faqceuhistory/faqceuhistory';
 
 //FAQ DisciplinaryMeasures
-import { FaqdmslightoffensePage } from './../pages/faqdmslightoffense/faqdmslightoffense';
-import { FaqdmseriousPage } from './../pages/faqdmserious/faqdmserious';
-import { FaqdmotheroffensePage } from './../pages/faqdmotheroffense/faqdmotheroffense';
-import { FaqdmlessseriousPage } from './../pages/faqdmlessserious/faqdmlessserious';
+import { FaqdisciplinaryholderPage } from './../pages/faqdisciplinaryholder/faqdisciplinaryholder'
 
+
+import { VmlistbldgsPage } from './../pages/vmlistbldgs/vmlistbldgs';
+import { VmbldginfoPage } from './../pages/vmbldginfo/vmbldginfo';
 
 @NgModule({
   declarations: [
@@ -47,12 +45,11 @@ import { FaqdmlessseriousPage } from './../pages/faqdmlessserious/faqdmlessserio
     FaqothertransactionsPage,
     FaqenrollmentprocPage,
     FaqdisciplinarymeasuresPage,
+    FaqdisciplinaryholderPage,
     FaqceumusicPage,
-    FaqceuhistoryPage,
-    FaqdmslightoffensePage,
-    FaqdmseriousPage,
-    FaqdmotheroffensePage,
-    FaqdmlessseriousPage
+    VmlistbldgsPage,
+    VmbldginfoPage
+
   ],
   imports: [
     BrowserModule,
@@ -74,12 +71,10 @@ import { FaqdmlessseriousPage } from './../pages/faqdmlessserious/faqdmlessserio
     FaqothertransactionsPage,
     FaqenrollmentprocPage,
     FaqdisciplinarymeasuresPage,
+    FaqdisciplinaryholderPage,
     FaqceumusicPage,
-    FaqceuhistoryPage,
-    FaqdmslightoffensePage,
-    FaqdmseriousPage,
-    FaqdmotheroffensePage,
-    FaqdmlessseriousPage
+    VmlistbldgsPage,
+    VmbldginfoPage
   ],
   providers: [
     StatusBar,

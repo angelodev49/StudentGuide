@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { VicinitymapPage } from '../vicinitymap/vicinitymap';
+import { SafeResourceUrl, DomSanitizer } from '@angular/platform-browser';
 /**
  * Generated class for the FaqboardofdirectorsPage page.
  *
@@ -14,8 +15,13 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'faqboardofdirectors.html',
 })
 export class FaqboardofdirectorsPage {
+  data: SafeResourceUrl;
+  loadedHTML: any;
+  myLoadedHTML: any;
+  constructor(public navCtrl: NavController, public navParams: NavParams, sanitizer: DomSanitizer) {
+    this.ionViewDidLoad
+    this.data = sanitizer.bypassSecurityTrustResourceUrl(this.myLoadedHTML = this.loadedHTML = navParams.get("myhtml"));
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
