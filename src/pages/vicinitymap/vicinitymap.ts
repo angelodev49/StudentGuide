@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { VmlistbldgsPage } from './../vmlistbldgs/vmlistbldgs';
 /**
  * Generated class for the VicinitymapPage page.
  *
@@ -21,5 +21,7 @@ export class VicinitymapPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad VicinitymapPage');
   }
-
+  loadBlgs() {
+    this.navCtrl.push(VmlistbldgsPage);
+  }
 }
